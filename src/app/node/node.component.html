@@ -1,0 +1,10 @@
+<form ngForm #assignmentsForm>
+    <button mat-stroked-button color="primary">Add assignment</button>
+</form>
+
+<div *ngFor="let assignment of assignments"
+    [ngStyle]="{'color':'green'}"  >
+    <p>Assigment {{assignment.name}} has been submitted</p>
+
+
+</div>
